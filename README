@@ -1,14 +1,16 @@
-A small Brainfuck interpreter written from scratch in Python.
+# Brainfuck Interpreter
+
+A small **Brainfuck interpreter written from scratch in Python**.
 
 Built as a personal challenge to understand how an extremely minimal programming language can be executed by an interpreter. Brainfuck has only eight commands:
 
-```text
-> < + - . , [ ]
-```
+**`> < + - . , [ ]`**
 
 Despite its simplicity, writing and debugging Brainfuck programs can be surprisingly difficult.
 
-One of the first successful tests was the classic Hello World program:
+## Hello World
+
+One of the first successful tests was the classic Brainfuck Hello World program:
 
 ```brainfuck
 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]
@@ -16,13 +18,15 @@ One of the first successful tests was the classic Hello World program:
 >.+++.------.--------.>+.>.
 ```
 
-which produces:
+Output:
 
 ```text
 Hello World!
 ```
 
-Usage:
+## Usage
+
+Run a Brainfuck source file with:
 
 ```bash
 python brainfuck.py yourcode.bf
@@ -36,4 +40,8 @@ import brainfuck
 brainfuck.evaluate(sourcecode)
 ```
 
-Built with Python as a hands-on exercise in interpreters, memory, pointers, loops, and program execution.
+## Built With
+
+**Python**
+
+A hands-on project exploring interpreters, memory, pointers, loops, and program execution.
