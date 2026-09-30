@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Brainfuck Interpreter
-# Copyright 2011 Sebastian Kaspari
+# Copyright 2026 Hayan Abdella
 #
 # Usage: ./brainfuck.py [FILE]
 
