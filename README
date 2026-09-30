@@ -1,22 +1,39 @@
-This is just a small Brainfuck interpreter written in Python.
+A small Brainfuck interpreter written from scratch in Python.
+
+Built as a personal challenge to understand how an extremely minimal programming language can be executed by an interpreter. Brainfuck has only eight commands:
+
+```text
+> < + - . , [ ]
+```
+
+Despite its simplicity, writing and debugging Brainfuck programs can be surprisingly difficult.
+
+One of the first successful tests was the classic Hello World program:
+
+```brainfuck
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]
+>++.>+.+++++++..+++.>++.<<+++++++++++++++.
+>.+++.------.--------.>+.>.
+```
+
+which produces:
+
+```text
+Hello World!
+```
 
 Usage:
- ./brainfuck.py yourcode.bf
 
-You can use it as a module as well:
-  import brainfuck
+```bash
+python brainfuck.py yourcode.bf
+```
 
-  sourcecode = """
-    ++++++++++[>+++++++>++++++++++>+++>+<<<<-]
-    >++.>+.+++++++..+++.>++.<<+++++++++++++++.
-    >.+++.------.--------.>+.>.
-  """
+The interpreter can also be used as a Python module:
 
-  brainfuck.evaluate(sourcecode)
+```python
+import brainfuck
 
-http://en.wikipedia.org/wiki/Brainfuck
+brainfuck.evaluate(sourcecode)
+```
 
-(C) Sebastian Kaspari 2011
-This programm is licensed under the terms of the
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE.
-
+Built with Python as a hands-on exercise in interpreters, memory, pointers, loops, and program execution.
